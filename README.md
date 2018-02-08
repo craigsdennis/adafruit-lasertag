@@ -1,6 +1,8 @@
 # Laser Tag
 
-A quick example of how you can use the adafruit  Circuit Playground Express to make laser tag.  This uses the neopixels for health display and the IR receiver to take hits from the enemy.
+A quick example of how you can use the [adafruit Circuit Playground Express](https://www.adafruit.com/product/3333) to make a game of Laser Tag.  This uses the neopixels for health display and the IR receiver to take hits from the enemy.
+
+You can fake the IR with a press of button A, and can reset with button B.  Should work with a compatible remote.
 
 ## Installation Instructions:
 ```npm install -g pxt
