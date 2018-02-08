@@ -5,7 +5,8 @@ A quick example of how you can use the [adafruit Circuit Playground Express](htt
 You can fake the IR with a press of button A, and can reset with button B.  Should work with a compatible remote.
 
 ## Installation Instructions:
-```npm install -g pxt
+```
+npm install -g pxt
 pxt build
 pxt deploy
 ```
