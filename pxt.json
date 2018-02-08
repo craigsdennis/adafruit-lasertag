@@ -1,0 +1,17 @@
+{
+    "name": "lasertag",
+    "version": "0.0.0",
+    "description": "Tracks IR communication",
+    "license": "MIT",
+    "dependencies": {
+        "circuit-playground": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
