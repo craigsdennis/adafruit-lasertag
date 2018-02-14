@@ -3,6 +3,7 @@ let health = MAX_HEALTH;
 
 function reset() {
     health = MAX_HEALTH;
+    light.stopAllAnimations();
     displayHealth();
 }
 
@@ -30,10 +31,10 @@ function displayHealth() {
 // Wire Events
 input.buttonA.onEvent(ButtonEvent.Click, takeHit);
 input.buttonB.onEvent(ButtonEvent.Click, reset);
-network.onInfraredReceivedNumber(num => {
-  // TODO: Hypothetically any IR signal will do
-  takeHit();
-});
+
+// Unfortunately all IR is throwing infrared errors...
+// TODO: debounce this so only one hit happens
+network.onInfraredError(takeHit);
 
 // Set the stage
 reset();
